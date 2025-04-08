@@ -12,6 +12,7 @@ const Gallery = () => {
     `${process.env.PUBLIC_URL}/images/ICPC2023.jpeg`,
     `${process.env.PUBLIC_URL}/images/ICPC2021.jpeg`,
     `${process.env.PUBLIC_URL}/images/icpc 2021allmember.jpeg`,
+    `${process.env.PUBLIC_URL}/images/Certificate_Distribution.jpeg`,
     // Add more images as needed
   ];
 
@@ -22,6 +23,7 @@ const Gallery = () => {
     "The 2023 ICPC Asia Dhaka Regional Site Online Preliminary Contest",
     "The 2021 ICPC Asia Dhaka Regional Site Online Preliminary Contest",
     "The 2021 ICPC Asia Dhaka Regional Site Online Preliminary Contest",
+    "Certificate Distribution Ceremony for Completing Non-Credit Courses in Web Development, Computer Networking & Embedded Systems",
     // Add more captions here
   ];
 

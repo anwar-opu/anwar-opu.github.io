@@ -8,6 +8,10 @@ import amazon_clone_img from "../../Assets/Projects/amazon_clone_img.png";
 import princePrediction from "../../Assets/Projects/PricePrediction.png";
 import alexaClone from "../../Assets/Projects/alexa_clone.jpg"
 import snakeGame from "../../Assets/Projects/snakeGame.png"
+import spamClassifier from "../../Assets/Projects/spam_classifier_demo.png"
+import movieRecommender from "../../Assets/Projects/movie_recommender_demo.png"
+import catsVsdogs from "../../Assets/Projects/cats_vs_dogs.jpeg"
+
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -20,6 +24,38 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={spamClassifier}
+                isBlog={false}
+                title="SMS/Email Spam Classifier"
+                description="A simple Streamlit web app that classifies SMS or Email messages as Spam or Not Spam using NLP and a machine learning model."
+                ghLink="https://github.com/anwar-opu/Email_Or_SMS_Spam_Classifier"
+                demoLink="https://sms-or-email-classifier.streamlit.app/"     // <--------Please include a demo link here
+              />
+          </Col>
+
+          <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={movieRecommender}
+                isBlog={false}
+                title="Movie Recommender System"
+                description="A content-based movie recommender system that suggests similar movies using TMDB API for posters. Built with Python, Streamlit, and scikit-learn."
+                ghLink="https://github.com/anwar-opu/Movie_Recommender_App"
+              />
+          </Col>
+
+          <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={catsVsdogs}
+                isBlog={false}
+                title="cats vs dogs classification "
+                description="A Deep Learning project comparing CNN architectures with/without Transfer Learning and Data Augmentation"
+                ghLink="https://github.com/anwar-opu/cats_vs_dog_classification"
+              />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
