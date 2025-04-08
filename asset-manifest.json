@@ -1,28 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.69cfc549.css",
-    "main.js": "/static/js/main.8dc26616.js",
+    "main.css": "/static/css/main.61202c53.css",
+    "main.js": "/static/js/main.97935256.js",
     "static/js/787.56230587.chunk.js": "/static/js/787.56230587.chunk.js",
     "static/js/8.4b25139a.chunk.js": "/static/js/8.4b25139a.chunk.js",
+    "static/media/movie_recommender_demo.png": "/static/media/movie_recommender_demo.31e9ea8e8ba6aa789d72.png",
     "static/media/chatify.png": "/static/media/chatify.332098341fe34a605e62.png",
     "static/media/amazon_clone_img.png": "/static/media/amazon_clone_img.a4ec112b574d4ec8b3cb.png",
-    "static/media/home-main.svg": "/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/spam_classifier_demo.png": "/static/media/spam_classifier_demo.185b99bf84851a828a5f.png",
+    "static/media/home-main.svg": "/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
     "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/Anwar'sResume.pdf": "/static/media/Anwar'sResume.c8b3f19d0a261a728d24.pdf",
+    "static/media/Anwar'sResume.pdf": "/static/media/Anwar'sResume.a0d2a85150d48849bd9d.pdf",
     "static/media/smartAudio.png": "/static/media/smartAudio.f3cb582c2985e81acf15.png",
     "static/media/alexa_clone.jpg": "/static/media/alexa_clone.af6255398992aba23191.jpg",
     "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
-    "static/media/avatar.svg": "/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
+    "static/media/avatar.svg": "/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg",
     "static/media/logo.png": "/static/media/logo.f6d696ff99bef70e0581.png",
     "index.html": "/index.html",
-    "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
-    "main.69cfc549.css.map": "/static/css/main.69cfc549.css.map",
-    "main.8dc26616.js.map": "/static/js/main.8dc26616.js.map",
+    "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
+    "main.61202c53.css.map": "/static/css/main.61202c53.css.map",
+    "main.97935256.js.map": "/static/js/main.97935256.js.map",
     "787.56230587.chunk.js.map": "/static/js/787.56230587.chunk.js.map",
     "8.4b25139a.chunk.js.map": "/static/js/8.4b25139a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69cfc549.css",
-    "static/js/main.8dc26616.js"
+    "static/css/main.61202c53.css",
+    "static/js/main.97935256.js"
   ]
 }
