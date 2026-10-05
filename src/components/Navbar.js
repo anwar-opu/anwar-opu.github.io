@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import { AiFillStar, AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
-import { FaCertificate } from "react-icons/fa"; // Import the new certificate icon
+import { FaBookOpen, FaCertificate } from "react-icons/fa"; // Import the new certificate icon
 import { CgFileDocument } from "react-icons/cg";
 import { BiImageAdd } from "react-icons/bi"; // New gallery icon
 
@@ -57,6 +57,12 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}>
                 <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link as={Link} to="/research" onClick={() => updateExpanded(false)}>
+                <FaBookOpen style={{ marginBottom: "2px" }} /> Research
               </Nav.Link>
             </Nav.Item>
 

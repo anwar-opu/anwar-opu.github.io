@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/profile.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -8,6 +8,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiGooglescholar } from "react-icons/si";
 
 function Home2() {
   return (
@@ -18,67 +19,99 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
+
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I am a passionate <b className="purple">Software Developer</b>{" "}
+              with a strong interest in building modern, scalable, and
+              user-friendly web applications.
               <br />
-              <br />I am fluent in classics like
+              <br />I work with programming languages like{" "}
               <i>
-                <b className="purple"> C, C++ and Python. </b>
+                <b className="purple">C, C++, JavaScript, and Python.</b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My primary area of interest is{" "}
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="purple">Full-Stack Web Development</b>
+              </i>
+              , where I build applications using{" "}
+              <i>
                 <b className="purple">
-                  Machine Learning.
+                  React.js, Next.js, Node.js, Express.js, and MongoDB.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              Alongside software development, I am also interested in{" "}
               <i>
                 <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
+                  Artificial Intelligence, Machine Learning, Deep Learning, and
+                  Computer Vision.
                 </b>
               </i>
-              &nbsp; like
+              <br />
+              <br />I have worked on{" "}
+              <b className="purple">
+                medical image analysis and classification
+              </b>{" "}
+              using{" "}
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple">
+                  CNNs, Transfer Learning, TensorFlow, Keras, and Vision
+                  Transformers.
+                </b>
               </i>
+              <br />
+              <br />I also enjoy{" "}
+              <b className="purple">
+                research and experimenting with AI models
+              </b>{" "}
+              to solve real-world problems, particularly in the field of{" "}
+              <b className="purple">medical imaging.</b>
             </p>
           </Col>
+
           <Col md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
+
         <Row>
           <Col md={12} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              <span className="purple"> EDUCATION 🎓</span>
+              <span className="purple">EDUCATION 🎓</span>
             </h1>
-            <p className="home-about-body">
+
+            <div className="home-about-body">
               <h3>
                 <b>
                   <ul>
                     <li>
-                      <span >Daffodil Institute of IT</span>
+                      <span>Daffodil Institute of IT</span>
                     </li>
                   </ul>
                 </b>
               </h3>
-              <h4>B.sc in<span className="purple"> computer science</span></h4>
-              <p>2020-Present 
-              Expected graduation: May 2025</p>
-            </p>
+
+              <h4>
+                Bachelor of Science (B.Sc.) in{" "}
+                <span className="purple">Computer Science</span>
+              </h4>
+
+              <p>
+                Completed: <span className="purple">December 2025</span>
+                <br />
+                Result Published: <span className="purple">February 2026</span>
+                <br />
+                CGPA: <span className="purple">3.35 / 4.00</span>
+              </p>
+            </div>
           </Col>
         </Row>
+
         <Row>
           <Col md={12} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
@@ -94,7 +127,7 @@ function Home2() {
                   </ul>
                 </b>
               </h3>
-              <h4 > Daffodil Institute of IT Programming Club - DPC</h4>
+              <h4> Daffodil Institute of IT Programming Club - DPC</h4>
               <p>August 2023 - June 2024 Kalabagan, Dhaka-1205</p>
             </p>
             <p className="home-about-body">
@@ -107,14 +140,12 @@ function Home2() {
                   </ul>
                 </b>
               </h3>
-              <h4>Bangladesh Nation Cadet Corps (BNCC)</h4>
+              <h4>Bangladesh National Cadet Corps (BNCC)</h4>
               <p>January 2012 - December 2015</p>
             </p>
           </Col>
         </Row>
-
         {/* Add the Projects component here */}
-
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
@@ -150,6 +181,18 @@ function Home2() {
                   className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
+                </a>
+              </li>
+
+              <li className="social-icons">
+                <a
+                  href="https://scholar.google.com/citations?user=sYAjQFYAAAAJ"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                  aria-label="Google Scholar"
+                >
+                  <SiGooglescholar />
                 </a>
               </li>
             </ul>

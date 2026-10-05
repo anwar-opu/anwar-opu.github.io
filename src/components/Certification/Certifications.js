@@ -1,9 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card ,Button} from "react-bootstrap";
 
-
-
-
 function Certifications() {
   return (
     <Container fluid className="certification-section py-5">
@@ -50,6 +47,8 @@ function Certifications() {
               </Card.Body>
             </Card>
           </Col>
+
+          
 
           {/* Second Certification Card */}
           <Col md={6} lg={4} sm={12} className="mb-4">

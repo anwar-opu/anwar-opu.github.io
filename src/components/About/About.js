@@ -7,6 +7,8 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
+
+
 function About() {
   return (
     <Container fluid className="about-section">
@@ -46,10 +48,12 @@ function About() {
         </h1>
         <Techstack />
 
-        <h1 className="project-heading">
+        
+
+        {/* <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
-        <Toolstack />
+        <Toolstack /> */}
 
         {/* Online Judge Handles Section */}
         <h1 className="project-heading">
@@ -68,7 +72,11 @@ function About() {
               rel="noopener noreferrer"
               style={{ zIndex: 2 }} // Ensuring anchor is clickable
             >
-              <Button variant="outline-primary " className="mb-3" style={{ zIndex: 2 }}>
+              <Button
+                variant="outline-primary "
+                className="mb-3"
+                style={{ zIndex: 2 }}
+              >
                 Codeforces: anwar9437
               </Button>
             </a>
@@ -80,7 +88,11 @@ function About() {
               rel="noopener noreferrer"
               style={{ zIndex: 2 }} // Ensuring anchor is clickable
             >
-              <Button variant="outline-info" className="mb-3" style={{ zIndex: 2 }}>
+              <Button
+                variant="outline-info"
+                className="mb-3"
+                style={{ zIndex: 2 }}
+              >
                 ICPC ID: PZG7862IDRGJ
               </Button>
             </a>
@@ -92,23 +104,37 @@ function About() {
               rel="noopener noreferrer"
               style={{ zIndex: 2 }} // Ensuring anchor is clickable
             >
-              <Button variant="outline-success" className="mb-3" style={{ zIndex: 2 }}>
+              <Button
+                variant="outline-success"
+                className="mb-3"
+                style={{ zIndex: 2 }}
+              >
                 HackerRank: anwar200110
               </Button>
             </a>
-
-            
           </Col>
         </Row>
 
         <h1 className="project-heading mt-5">
-          Competitive Programming <strong className="purple">Achievements</strong>
+          Competitive Programming{" "}
+          <strong className="purple">Achievements</strong>
         </h1>
         <Row className="justify-content-center mt-5">
           <Col md={12}>
-            <p>ICPC 2021, 2022, and 2023 participant</p>
-            <p>Solved over 180+ problems on Codeforces and <span className="purple">rating max 802</span> </p>
-            <p>Bronze level badge in Python on HackerRank</p>
+            <p>
+              {" "}
+              <span className="purple">ICPC</span> 2021, 2022, and 2023
+              participant
+            </p>
+            <p>
+              Solved over 180+ problems on Codeforces and{" "}
+              <span className="purple">rating max 802</span>{" "}
+            </p>
+            <p>
+              {" "}
+              <span className="purple">Bronze </span> level badge in Python on
+              HackerRank
+            </p>
           </Col>
         </Row>
 

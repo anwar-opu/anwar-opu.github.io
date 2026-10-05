@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-image-lightbox/style.css';
-import Lightbox from 'react-image-lightbox'; // Default import
-import './Gallery.css'; // Import the CSS file
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-image-lightbox/style.css";
+import Lightbox from "react-image-lightbox"; // Default import
+import "./Gallery.css"; // Import the CSS file
 
 const Gallery = () => {
   const images = [
+    `${process.env.PUBLIC_URL}/images/Qpain-Presentation.jpg`,
+    `${process.env.PUBLIC_URL}/images/Qpain-Certificate.jpg`,
+    `${process.env.PUBLIC_URL}/images/IEEE-BECITHCON-P.jpg`,
     `${process.env.PUBLIC_URL}/images/ES.jpeg`,
     `${process.env.PUBLIC_URL}/images/PC.jpeg`,
     `${process.env.PUBLIC_URL}/images/problemSetter.jpeg`,
@@ -17,6 +20,9 @@ const Gallery = () => {
   ];
 
   const captions = [
+    "Poster Presentation — IEEE QPAIN 2026",
+    "Certificate Distribution — IEEE QPAIN 2026",
+    "Oral Presentation — IEEE BECITHCON 2025",
     "Embedded System project showcase",
     "DIIT Programming Club - DPC",
     "IT fest 6.0 Problem Setter",
@@ -24,6 +30,7 @@ const Gallery = () => {
     "The 2021 ICPC Asia Dhaka Regional Site Online Preliminary Contest",
     "The 2021 ICPC Asia Dhaka Regional Site Online Preliminary Contest",
     "Certificate Distribution Ceremony for Completing Non-Credit Courses in Web Development, Computer Networking & Embedded Systems",
+
     // Add more captions here
   ];
 
@@ -36,7 +43,7 @@ const Gallery = () => {
       {/* Added inline style for extra top margin */}
       <h2
         className="text-center text-white mb-4"
-        style={{ marginTop: "100px", color: '#fff' }} // Custom top margin
+        style={{ marginTop: "100px", color: "#fff" }} // Custom top margin
       >
         My <strong className="purple">Gallery</strong>
       </h2>
@@ -50,20 +57,20 @@ const Gallery = () => {
             className="col-md-4 col-sm-6 col-12 mb-4 position-relative gallery-item"
             key={index}
             onMouseEnter={() => setHoveredIndex(index)} // Set hovered index
-            onMouseLeave={() => setHoveredIndex(null)}  // Reset on mouse leave
+            onMouseLeave={() => setHoveredIndex(null)} // Reset on mouse leave
           >
             <img
               src={image}
               alt={`Gallery Item ${index + 1}`}
-              className={`img-fluid ${hoveredIndex !== null && hoveredIndex !== index ? 'grayscale' : ''}`}
+              className={`img-fluid ${hoveredIndex !== null && hoveredIndex !== index ? "grayscale" : ""}`}
               onClick={() => {
                 setPhotoIndex(index);
                 setIsOpen(true);
               }}
-              style={{ cursor: 'pointer', height: '300px', objectFit: 'cover' }}
+              style={{ cursor: "pointer", height: "300px", objectFit: "cover" }}
             />
             {hoveredIndex === index && ( // Show overlay only for the hovered image
-              <div className="overlay">               
+              <div className="overlay">
                 <p className="text-center purple">{captions[index]}</p>
               </div>
             )}
@@ -78,8 +85,12 @@ const Gallery = () => {
           prevSrc={images[(photoIndex + images.length - 1) % images.length]}
           imageCaption={captions[photoIndex]}
           onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() => setPhotoIndex((photoIndex + images.length - 1) % images.length)}
-          onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % images.length)}
+          onMovePrevRequest={() =>
+            setPhotoIndex((photoIndex + images.length - 1) % images.length)
+          }
+          onMoveNextRequest={() =>
+            setPhotoIndex((photoIndex + 1) % images.length)
+          }
         />
       )}
     </div>
